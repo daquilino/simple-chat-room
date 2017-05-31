@@ -1,0 +1,46 @@
+<!-- Douglas Aquilino       May 31, 2017 -->
+<!-- Simple Chat Room    -->
+<!--             index.html                -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Simple Chat Room</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- socket.io-client exposed automatically by the socket.io serve-->
+	<script src="/socket.io/socket.io.js""></script>
+</head>
+
+<body>
+	<header class="text-center">
+		<h1 id="main-header">Simple Chat Room</h1>
+	</header>
+
+
+	<div class="container text-center">
+		<div id="chat-box">
+		</div>
+		
+		<form>
+			<input type="text" placeholder="message" id="message">
+			<button id="chat-button">Chat</button>
+		</form>
+
+
+	</div>
+
+
+
+</body>
+</html>
