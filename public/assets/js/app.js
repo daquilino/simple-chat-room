@@ -1,6 +1,5 @@
-
-//this establishes socket connection to local host
-var socket = io.connect('http://localhost:3000');
+console.log("location.href:", window.location.href);
+var	socket = io.connect('http://localhost:3000');
 
 //listens for incomeing data named "message" from server
 socket.on("message", addToChat );
