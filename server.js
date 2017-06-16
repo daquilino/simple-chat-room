@@ -22,6 +22,8 @@ function OnConnection(socket)
 	//listens for incomeing data named "message" from client
 	socket.on("message", getMessage);
 
+
+	// declared getMessage here so it has access to 'socket' variable.
 	function getMessage(data)
 	{
 		// this sends the data to everyone but you
@@ -33,5 +35,4 @@ function OnConnection(socket)
 	}
 }
 
-// Note to future self (or anyone else wondering). 
-// I could have declared getMessage() down here instead of in OnConnection().
+
